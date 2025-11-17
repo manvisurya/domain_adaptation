@@ -1,0 +1,17 @@
+adapt_logs/
+*.log
+temp/
+train.sh.o*
+node_modules/
+dist/
+build/
+.venv/
+__pycache__/
+.DS_Store
+*.log
+.env
+train2.sh.o*
+events.out.tfevents.*
+exp_logs/
+models/
+*.pth
