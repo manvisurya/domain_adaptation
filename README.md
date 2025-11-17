@@ -23,7 +23,7 @@ This repository contains the implementation of a source-free domain adaptation a
 
 
 ![Adaptation](./img/mymodel.png)
-*The adaptation framework *
+                                     **The adaptation framework**
 
 
 ### Architecture Overview
@@ -52,4 +52,4 @@ Only valid depth values are considered through dynamically generated masks.
 
 Supervised training on Virtual Gallery dataset and then adapting it to NYU dataset results
 
-![results](./img/afteradaptation.png)
+![results](./img/afteradaptation.jpg)
