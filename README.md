@@ -6,7 +6,16 @@ A Master's thesis implementation of Test-Time Domain Adaptation (TTDA) for monoc
 
 ## Overview
 
-This repository contains the implementation of a source-free domain adaptation approach for monocular depth estimation. The method enables a model trained on synthetic indoor environment (Virtual Gallery dataset) to adapt to real-world indoor scenes at test time, without requiring the original training data.
+The primary objective of the thesis is to explore whether
+synthetic data (Virtual gallery dataset) can serve as a scalable and effective source for training adaptive depth
+estimation systems. More specifically, the research seeks to determine whether a model
+trained using synthetic images without access to ground truth labels or target domain
+camera parameters can successfully generalize to different environments using selfsupervised
+TTDA techniques. The proposed system will perform supervised learning
+on a synthetic dataset and later adapt at test time using only unlabeled target domain (NYU dataset)
+images. This strategy avoids reliance on manual annotations, source data during
+inference, or knowledge of deployment conditions, making it ideal for applications
+in wearable technologie
 
 ### Key Features
 
@@ -23,7 +32,7 @@ This repository contains the implementation of a source-free domain adaptation a
 
 
 ![Adaptation](./img/mymodel.png)
-                                     **The adaptation framework**
+**The adaptation framework**
 
 
 ### Architecture Overview
@@ -50,6 +59,6 @@ Only valid depth values are considered through dynamically generated masks.
 
 ## After Adaptation
 
-Supervised training on Virtual Gallery dataset and then adapting it to NYU dataset results
+Supervised training on Virtual Gallery dataset and then adapting it to NYU dataset (without using labels of NYU) results
 
 ![results](./img/afteradaptation.jpg)

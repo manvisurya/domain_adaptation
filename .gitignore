@@ -15,3 +15,4 @@ events.out.tfevents.*
 exp_logs/
 models/
 *.pth
+.vscode/
